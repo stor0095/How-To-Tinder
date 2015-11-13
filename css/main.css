@@ -1,0 +1,31 @@
+/* Defaults */
+
+
+html{
+    font-family: sans-serif, serif;
+}
+
+
+.masthead {
+    width: 100%;
+}
+
+.content{
+   background-color: #FFE4D0;
+}
+
+.infoFooter {
+    float: right;
+}
+
+.ui-btn.ui-btn.ui-btn-inline.ui-icon-carat-r.ui-btn-icon-right{
+    float: right;
+    background: #CCA280;
+    border-radius: 2rem;
+}
+
+h3 {
+    margin-top: -1rem;
+    text-align: center;
+    color: #7F3F0C;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--- Css Links ---->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!----- Scripts ---->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    
+    <div data-role="page" id="home">
+        <div data-role="header" role="banner" style="background: #FFCBA0; color: #7F3F0C;"> <!---- http://stackoverflow.com/questions/9748337/jquery-mobile-button-background-color ----->
+            <h1>How to Tinder</h1>
+        </div>
+            <div data-role="content" class="content">
+               <img src="images/tinder.png" alt="Tinder" class="masthead">
+                <p>Welcome to How To Tinder. This is a tutorial that will teach you how to utilize Tinder so that you can get more matches and go on more dates!</p>
+                <p>I'll show you the tricks on how to make your profile standout more, which pictures to use, and how to make a bio that is unique and interesting.</p>
+                <p>Tinder is a shallow app, so be shallow to get more matches.</p>
+            <a href="#tutorial" data-role="button" data-transition="pop" data-rel="dialog" style="background:#CCA280;">Start Tutorial</a>
+            <a href="#info" data-role="button" data-transition="pop" style="background:#CCA280;">About Me</a>
+            </div>
+            <div data-role="footer" style="background: #FFCBA0;">
+                <h1>&copy;2015 Storey Inc.</h1>
+            </div>
+    
+    </div>
+       
+       <div data-role="page" id="info">
+            <div data-role="header" style="background: #FFCBA0;">
+                <h1>About Me</h1>
+        </div>
+        <div data-role="content" class="content">
+            <div data-role="controlgroup" data-type="vertical">
+               <img src="images/IMG_1172.JPG" alt="Playa" class="masthead">
+                <p>My name is Geemakun Storey. I'm a student studying Mobile Application Design &amp; Development at Algonquin College. My passions are studying history, travelling, business, technology, and being spontaneous. I'm half British so I also spend a lot of time in the UK and visiting continental Europe.</p>
+            </div>
+            
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <h1>&copy;2015 Storey Inc.</h1>
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+            </div>
+    </div>
+       <div data-role="page" id="tutorial">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 1 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Your Profile</h3>
+                   <img src="images/Tinder-2.jpg" alt="Tinder2" class="masthead">
+                   <p>The key to getting more matches is having a profile that stands out. You have to remember someone only sees your profile for a few seconds. Those few seconds mean a lot!</p>
+                   <p>Having the right photo(s) and words can make a world of a difference.</p>
+                   <a href="#partone" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">"Next" ::after</a>
+               </div>
+           </div>
+           <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    <div data-role="page" id="partone">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 2 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Photos</h3>
+                   <img src="images/Emilys-Tinder-Profile-Pic.png" alt="Emily" class="masthead">
+                   <p>Choose your best photos! If you want more matches, include the following photos if you have them:</p>
+                   <ul>
+                       <li>&#8226; A clear photo of you smiling </li>
+                       <li>&#8226; One that shows you are social</li>
+                       <li>&#8226; You in front of something cool</li>
+                       <li>&#8226; With some sort of animal</li>
+                   </ul>
+                   <a href="#" data-rel="back" data-transition="slide" style="background:#CCA280; border-radius:2rem;" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">"Back" ::after</a>
+                   <a href="#partthree" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">"Next" ::after</a>
+               </div>
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    <div data-role="page" id="partthree">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 3 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Photo Theory</h3>
+                   <p>A picture speaks a thousand words. The opposite sex wants to see visually that you are fun, unqiue, and good looking.</p>
+                   <p>If you choose the photos I suggested, possible matches will see that you're a bit of everything. That's what you want to show off.</p>
+                   <a href="#" data-rel="back" data-transition="slide" style="background:#CCA280; border-radius:2rem;" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">"Back" ::after</a>
+                   <a href="#partfour" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">"Next" ::after</a>
+               </div>
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    <div data-role="page" id="partfour">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 4 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Your Bio</h3>
+                   <p>Data has shown that most men don't read a Tinder bio until after they've matched. However, most women DO read your bio.</p>
+                   <p>Create a bio that, again, makes you stand out. List all the things that make you unique. Be a douchebag, show off your material belongings and accomplishments. Make someone yearn for more and want to ask questions.</p>
+                   <p>That's what makes you stand out. Word it so you sound like the man from Wolf of Wall Street.</p>
+                   <a href="#" data-rel="back" data-transition="slide" style="background:#CCA280; border-radius:2rem;" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">"Back" ::after</a>
+                   <a href="#partfive" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">"Next" ::after</a>
+               </div>
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    <div data-role="page" id="partfive">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 5 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Starting a Conversation</h3>
+                   <img src="images/article-2570458-1BA6EE0500000578-82_634x484.jpg" alt="A Match" class="masthead">
+                   <p>So what now? Starting a conversation can be quite the task.</p>
+                   <p>Again, you want to stand out. Don't come out with the cheesy pick-up line or 'what's up, how are you'.</p>
+                   <p>Comment on something in their bio if you notice something interesting or a mutual thing you both share. Or comment on a photo if you notice a conversation starter that you can lead with.</p>
+                   <a href="#" data-rel="back" data-transition="slide" style="background:#CCA280; border-radius:2rem;" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">"Back" ::after</a>
+                   <a href="#partsix" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-r ui-btn-icon-right nextP">"Next" ::after</a>
+               </div>
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    <div data-role="page" id="partsix">
+           <div data-role="header" style="background: #FFCBA0;">
+               <h1>Part 6 of 6</h1>
+           </div>
+           <div data-role="content" class="content">
+               <div data-role="controlgroup" data-type="vertical">
+                   <h3>Summary</h3>
+                   <img src="images/11188428_10153251478931215_3312976869802765290_n.jpg" alt="Random" class="masthead">
+                   <p>I hope this tutorial will help. Remmeber that the goal is to stand out! You are one among millions. How do you do that? Choose your best photos. Change your words to change your world.</p>
+                   <p> Be Gatsby-like!</p>
+                   <a href="#" data-rel="back" data-transition="slide" style="background:#CCA280; border-radius:2rem;" class="ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-carat-l ui-btn-icon-left backP">"Back" ::after</a>
+               </div>
+        </div>
+        <div data-role="footer" style="background: #FFCBA0;">
+                <a href="#home" data-role="button" data-transition="pop" style="background:#CCA280;">Home</a>
+                <a href="#info" data-role="button" data-transition="pop" class="infoFooter" style="background:#CCA280;">About Me</a>
+            </div>
+    </div>
+    
+    
+    
+</body>
+</html>
