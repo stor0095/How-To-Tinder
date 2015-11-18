@@ -6,46 +6,42 @@ have both been attached
 
 
 
-$(document).bind("mobileinit", function(ev){
-  //alert("mobileinit event");
-  //when jqm has loaded and we can set default settings
-});
-
-
-
-$(document).bind("ready", function(ev){
-  //jquery, jqm, and the DOM are ready
-  //we can now attach listeners to page elements
-  //alert("ready event ");
-  
-  $("#partone").bind("pageinit", function(ev){
+$(document).on('mobileinit', init); //({
+   // console.log('Tutorial Loaded');
+    //when jqm has loaded and we can set default settings
+//});
+               
+  function init(){
+        $(document).on('pageshow', '#home', dialogHome);
+        $(document).on('pageshow', '.dialogSequence', dialogSteps);
+    }
     
-    //when each page loads for the first time.
-  });
-  
-  $(".dlg").on("click", function(ev){
-    ev.preventDefault();
-    //$.mobile.changePage( "#bob", { role: "dialog" } );
-    //the above line is the old jQM version of opening a dialog
-    //below is the new recommended method    
-    $.mobile.pageContainer.pagecontainer("change", "#partwo", {role: "dialog"});
-  });
-  
-  $(".test").on("click", function(ev){
-    //add listeners to the objects with class="test"
-    ev.preventDefault();
-    //stop normal navigation
+ function dialogHome(){
+        
+        if ('localStorage' in window) {
+            var storePage = window.localStorage.getItem('#home');
+                if (storePage != null)
+                {
+                    $('a[id="startTutorial"]').attr('href', storePage);
+                }
+            }
+    }
     
-    //send the user to the page fred.
-    $.mobile.pageContainer.pagecontainer("change", "#partwo");
-    /*************************
-    Inside $ / jQuery there is an object called mobile.
-    Inside mobile there is an object called pageContainer which
-    is wrapped around all the data-role="page" elements.
-    pageContainer has a method called pagecontainer which will,
-    amoung other things, allow us to load a page.
-    **************************/
-  });
-  
-  
-});
+    function dialogSteps() {
+        
+        if ('localStorage' in window) {
+                var currentPage = '#' + $(this).attr('id');
+                window.localStorage.setItem('#home', currentPage);
+        }
+      
+            $('#home').click(function() { //http://stackoverflow.com/questions/10087370/how-to-close-jquery-dialogue-box-for-mobile-application
+            $('.ui-dialog').dialog('close');
+      });
+        
+        
+    }
+    
+ 
+
+
+    
